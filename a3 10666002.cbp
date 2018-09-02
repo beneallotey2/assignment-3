@@ -1,0 +1,88 @@
+#include <iostream>
+
+using namespace std;
+int main()
+{
+    //declaration of variables.
+    int sub1,sub2,sub3,sub4,sub4,sub5,total,average;
+    //accepting marks from user in each subject
+
+   cout << "enter chemistry marks /n :"
+   cin >> sub1;
+   cout << "enter mathematics marks /n :"
+   cin >> sub2;
+   cout << "enter biology marks /n :"
+   cin >> sub3;
+   cout << "enter information technology marks /n :"
+   cin >> sub4;
+   cout << "enter social studies marks /n :"
+   cin >> sub5;
+
+   //calculation sum of marks obtained in each subject
+   total = (sub1 + sub2 + sub3 + sub4 +sub5 );
+
+   //calculating average marks
+    average = total / 5;
+
+   //starting of if condition for finding out grades of total subject.
+   switch (average){
+   case 1:{
+   if ((avearge >= 80) && ( average <= 100))
+    {
+        cout << "average is: " << average << endl
+        cout << "grade is A+ " << endl;
+    }
+    break;
+   }
+   case 2:{
+   if ((average >= 70) && (average <= 79))
+    {
+        cout << "average is: " << average <<endl;
+        cout << "grade is A " << endl ;
+
+    }
+    break;
+   }
+   case 3: {
+   if ((average >= 60) && (average <= 69))
+    {
+        cout << "average is: " << average << endl;
+        cout << "grade is B+ " << endl;
+
+    }
+    break;
+   }
+   case 4:{
+   if ((average >= 50) && (average <= 59))
+    {
+        cout << "average is: " << average << endl;
+        cout << "grade is C+ " << endl;
+    }
+    break;
+   }
+   case 5: {
+   if ((average >= 40) && (average <= 49))
+   {
+       cout << "average is: " << average << endl;
+       cout << "grade is C- ! " << endl;
+   }
+   case 6: {
+   if ((aveage >= 30) && (average <= 39))
+    {
+        cout << "average is: " << avearge << endl;
+        cout << "grade is D !" << endl;
+    }
+    break;
+   }
+   default:{
+       if ((average >= 100) && (average <= 29))
+       {
+           cout << "average is: " << average << endl;
+           cout << " grade is F, so you failed in the class ! " << endl;
+           break;
+       }
+    }
+ }
+
+   system("pause");
+ }
